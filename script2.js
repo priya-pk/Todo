@@ -21,8 +21,10 @@ ajax();
     $('#list').on('click','.checkbox',function(e){
         if($(this).prop('checked')===true){
             count++;
-            $(this).parent().addClass('disabled')
             check();
+        }
+        else{
+            count--;
         }
     })
 function check(){
@@ -35,4 +37,5 @@ function check(){
         alert(s);
     })
 }   
+
 
