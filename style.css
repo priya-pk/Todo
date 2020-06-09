@@ -1,0 +1,72 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f3f3f3;
+    margin: 0;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #1b1b32; 
+    background-image: linear-gradient(to left ,rgba(0,0,0,0.6),rgba(161, 112, 112, 0.1)) ,url(Images/sign1.jpg);
+    /* background-image: linear-gradient(115deg,rgba(150, 150, 153, 0.582),rgba(248, 248, 248, 0.288)),url(Images/sign1.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+  }
+  .sign{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+ 
+  .log-box{
+    background:rgba(50, 27, 47, 0.952);
+    /* background:rgba(50, 27, 47, 0.856); */
+     width: 400px;
+    height: 450px ; 
+    margin-top: 150px;
+    padding: 30px 50px; 
+    color: White;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25 ),10px 10px rgba(0,0,0,0.22);
+    font-family: cursive;
+  } 
+  
+  #log-btn{
+    color: white;
+    border-radius: 20px;
+    padding: 10px 45px;
+    cursor: pointer;
+    background: transparent;
+    border-color: white;
+    letter-spacing: 2px ;
+    word-spacing: 5px;
+    transition: transform 80ms ease-in;
+}
+
+.sign-head{
+    text-align: center;
+    padding-bottom:5px ;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 3px 2px 2px rgba(128, 128, 128, 0.842); 
+
+}
+button:active{
+    transform: scale(0.95);
+}
+button:focus{				
+    outline: none;
+}
+
